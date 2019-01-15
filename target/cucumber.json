@@ -1,0 +1,149 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2323075982,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Valid login",
+        "description": "",
+        "id": "user-tries-to-login-to-amazon.com-with-valid-and-invalid-credentials;valid-login",
+        "after": [
+          {
+            "result": {
+              "duration": 919456798,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7076969026,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am a user of amazon.com",
+            "match": {
+              "location": "LoginSteps.i_am_a_user_of_amazoncom()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5109722622,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I log in using valid credentials",
+            "match": {
+              "location": "LoginSteps.i_log_in_using_valid_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15133999159,
+              "error_message": "java.lang.AssertionError: WebElement is NOT visible, Exception: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator \u0027By.xpath: \t//*[@id\u003d\u0027nav-link-accountList\u0027]/span[1]\u0027 (tried for 15 second(s) with 500 MILLISECONDS interval)\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat pageObjects.BasePage.WaitUntilWebElementIsVisible(BasePage.java:239)\r\n\tat pageObjects.Login_Page.confirmLoginWasSuccessful(Login_Page.java:61)\r\n\tat stepDefinitions.LoginSteps.i_should_be_logged_in(LoginSteps.java:36)\r\n\tat ✽.Then I should be logged in(src/test/java/resources/features/Login.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "I should be logged in",
+            "match": {
+              "location": "LoginSteps.i_should_be_logged_in()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1730463797,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.setup()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Invalid login",
+        "description": "",
+        "id": "user-tries-to-login-to-amazon.com-with-valid-and-invalid-credentials;invalid-login",
+        "after": [
+          {
+            "result": {
+              "duration": 1004150365,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6685033314,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am a user of amazon.com",
+            "match": {
+              "location": "LoginSteps.i_am_a_user_of_amazoncom()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4382910028,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I log in using invalid credentials",
+            "match": {
+              "location": "LoginSteps.i_log_in_using_invalid_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 79837882,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should not be logged in",
+            "match": {
+              "location": "LoginSteps.i_should_not_be_logged_in()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User tries to login to amazon.com with valid and invalid credentials",
+    "description": "",
+    "id": "user-tries-to-login-to-amazon.com-with-valid-and-invalid-credentials",
+    "keyword": "Feature",
+    "uri": "src/test/java/resources/features/Login.feature"
+  }
+]
