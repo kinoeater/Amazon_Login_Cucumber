@@ -3,6 +3,7 @@
 Acceptance criteria implementation
 Using Cucumber (Java) and Selenium/Webdriver, implement the following tests
 on the Chrome browser.
+Future: Amazon Login
 Scenario: Valid login
 Given I am a user of amazon.com
 When I log in using valid credentials
